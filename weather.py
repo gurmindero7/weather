@@ -1,13 +1,12 @@
 import streamlit as st 
 import requests
-st.set_page_config("Weather Page")
+st.set_page_config("Weather Page", page_icon=':sun_small_cloud:')
 import datetime
 import pandas 
-st.title("Weather App")
+st.title("Weather App") 
 st.cache_data()
 def weatherSearch(city):
     API_KEY = "6ee01bd686ddb245a7b5e0f7bd6547b0"
-
     
     if city_name:
         api_address = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + API_KEY
